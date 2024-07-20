@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Javascript</title>
+        <link rel="stylesheet" type ="text/css" href="style.css">
+        <!-- H1 / Body / Inputs 6.14.2024.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <!--Assignment Objectives Check: 
+        1.  Create an HTML page that contains a user greeting (e.g. "Hello User!") inside an <h1> element and a brief message inside a <p> element.
+            1. Checked - Below the Submit Button
+        2.   1) A text box for the user to enter their name (to customize the greeting)
+            2. Checked - First Element
+        3. A drop down menu that allows the user to choose the background color of the page from several options.
+            3. Checked - 3rd Element
+        4. A text box for the user to enter the brief message to be displayed inside of the <p> element created in step 1.
+            4. Checked - 2nd Element
+        5. A submit button that puts these changes into effect.
+            5. Checked - Last Element
+        6. CSS File
+            6. Added and Checked
+
+        
+        Bonus 3 points
+        7. Add "To Do List" functionality that allows the user to add "To Do" items using an additional text box and button.  Each "To Do" item should be stored as a list item inside of an ordered list.
+         7. Added and Checked    
+    -->
+
+
+
+    <body>
+        <div> 
+        <!--This is my text box for the user to enter their name-->
+        Name:
+        <input type = "text" id = "userInput"></input>
+        <br>
+         <!--This is my text box for the whoever is using the site to make to a brief message-->
+         Brief Message: <br>
+         <input type = "text" id = "userMessage"></input>
+
+
+
+
+        
+        <br>
+        <!-- Use an id whenever you need to access something - Video: 59:51 6.13.2024-->
+        <!--Use this in the next project to also change the background to an image. I think it would be cool to change the background or color based off the cover art 6.15.2024-->
+        <select id ="theThings"> 
+            <option>Blue</option>
+            <option>Yellow</option>
+            <option>Purple</option>
+        </select>
+        <br>
+
+        <button onclick="sayHello();">Submit</button>
+        <h1> Hello User! </h1>
+        <p id="userReply">This where the text will show up :).</p>
+
+        <br>
+        <br>
+        <h1>To-Do List:</h1>
+        <br>
+        
+        Thing 1: 
+        <input type = "text" id = "ThingOne"></input>
+        <br> 
+        Thing 2: 
+        <input type = "text" id = "ThingTwo"></input>
+
+        <br>
+         Thing 3: 
+        <input type = "text" id = "ThingThree"></input>
+        
+        <br><br>
+
+        <button onclick="ourList();">Add To The To-Do List</button>
+
+        <br> <br>
+        Your to-do List: 
+
+        <ol>
+            <li id = "listOne" ></li>
+            <li id = "listTwo" ></li>
+            <li id = "listThree" ></li>
+          </ol>
+
+
+
+        <script src="script.js"></script>
+
+    </div>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+* {
+    
+    font-family: "Roboto";
+    font-style: normal;
+}
+
+div {
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin: 5em;
+    padding: 20px;
+}
+
+
+
+#h1 {
+    color: black;
+    font-size: 50px;
+    background-color: white;
+    margin: 1em;
+}
+
+body {
+    background-color: grey;
+
+}
+
+ol {
+    background-color: white;
+}
